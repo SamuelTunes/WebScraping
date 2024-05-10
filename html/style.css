@@ -1,0 +1,78 @@
+body {
+    max-width: 100%;
+    margin: 0 auto; /* Isso centralizará o conteúdo na tela */
+}
+
+/* Estilizando o título da página */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+/* Estilizando o campo de entrada */
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+/* Estilizando o botão */
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-bottom: 10px;
+}
+
+/* Estilizando os itens */
+.item {
+    width: calc(25% - 20px); /* Ajusta a largura da div para ocupar 25% da largura total, com margem de 20px */
+    margin-bottom: 20px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre as divs dos itens */
+}
+
+/* Estilizando o título do item */
+.item h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+/* Estilizando o rating e o número de reviews */
+.item p {
+	display: block;
+    margin: 0 auto; 
+    font-size: 14px;
+    color: #007bff;
+    margin-bottom: 4px;
+}
+
+/* Estilizando a imagem do item */
+
+img {
+    display: block;
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 5px;
+}

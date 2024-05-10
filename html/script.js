@@ -44,18 +44,20 @@ function fazerRequisicao(keyword) {
 	xhr.send();
 }
 
- function displayProducts(products) {
-            var productDetails = document.getElementById('productDetails');
-            productDetails.innerHTML = '';
+function displayProducts(products) {
+    var productDetails = document.getElementById('productDetails');
+    productDetails.innerHTML = '';
 
-            products.forEach(function(product) {
-                var productDiv = document.createElement('div');
-                productDiv.innerHTML = `
-                    <h2>${product.title}</h2>
-                    <p>Rating: ${product.rating}</p>
-                    <p>Number of reviews: ${product.numReviews}</p>
-                    <img src="${product.imageURL}" alt="${product.title}">
-                `;
-                productDetails.appendChild(productDiv);
-            });
-        }
+    products.forEach(function(product) {
+        var productDiv = document.createElement('div');
+        // Adicionando a classe .item à div
+        productDiv.classList.add('item');
+        productDiv.innerHTML = `
+            <h2>${product.title}</h2>
+            <p>Rating: ${product.rating}</p>
+            <p>Number of reviews: ${product.numReviews}</p>
+            <img src="${product.imageURL}" alt="${product.title}">
+        `;
+        productDetails.appendChild(productDiv);
+    });
+}
